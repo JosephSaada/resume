@@ -5,10 +5,6 @@
     <style> 
     @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
 
-
-
-/* Reset Styles */
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -29,15 +25,16 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
+
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
 a{
 	text-decoration: none;
 	text-transform: none;
-	color: #34568B;
+	color: #789ABC;
 }
 
 body {
@@ -46,20 +43,18 @@ body {
 	text-rendering : optimizeLegibility;
 	-webkit-font-smoothing : antialiased;
 	font-size: 19px;
-	background-color: #FEFEFE;
-	color: #04143A;
+	background-color: #0E0E0E;
+	color: #C4C4C4;
 }
+
 ol, ul {
 	list-style: none;
 }
+
 blockquote, q {
 	quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -79,11 +74,6 @@ div , footer {
 	box-sizing: border-box;
 }
 
-/* Reset ends */
-
-
-/*Hero section*/
-
 .container {
 	max-width: 1100px;
 	height: auto;
@@ -92,19 +82,20 @@ div , footer {
 
 .hero {
 	margin: 50px auto; 
-	position: relative;
+	position: relative; 
+	text-align: center;
 }
 
 h1.name {
 	font-size: 70px;
 	font-weight: 300;
-	display: inline-block;
+	display: inline-block; 
 }
 
 .job-title {
 	vertical-align: top;
-	background-color: #D9E7F8;
-	color: #34568B;
+	background-color: #2B2D2F;
+	color: #789ABC;
 	font-weight: 600;
 	margin-top: 5px;
 	margin-left: 20px;
@@ -124,23 +115,22 @@ h1.name {
 .lead {
 	font-size: 44px;
 	font-weight: 300;
-	margin-top: 60px;
-	line-height: 55px;
+	margin-top: 30px;
+	line-height: 55px; 
+	text-align: center;
 } 
 
 .end {
 	font-size: 20px;
 	font-weight: 300;
-	margin-top: 60px;
-	line-height: 30px;
+	margin-top: 30px;
+	line-height: 30px; 
+	text-align: center;
 } 
 
-/*hero ends*/
-
-/*skills & intrests*/
-
 .sections {
-	vertical-align: top;
+	vertical-align: top; 
+	text-align: center;
 	display: inline-block;
 	width: 49.7%;
 	height: 50px;
@@ -163,7 +153,7 @@ h1.name {
 
 .list-card .exp {
 	margin-right: 15px;
-	color: #34568B;
+	color: #789ABC;
 	font-weight: 600;
 	width: 100px;
 }
@@ -186,11 +176,6 @@ h1.name {
 	line-height: 22px;
 }
 
-/*skill and intrests ends*/
-
-/* Achievements */
-
-
 .cards {
 	max-width: 1120px;
 	display: block;
@@ -200,7 +185,7 @@ h1.name {
 .card {
 	width: 47.9%;
 	height: 200px;
-	background-color: #EEF0F7;
+	background-color: #2B2D2F;
 	display: inline-block;
 	margin: 7px 5px;
 	vertical-align: top;
@@ -212,11 +197,10 @@ h1.name {
 .card-active , .card:hover{
 	transform: scale(1.02);
 	transition: 0.5s;
-	background-color: #fff;
+	background-color: #3B3D3F;
 	box-shadow: 0px 5px 50px -8px #ddd;
 	cursor: pointer;
 }
-
 
 .skill-level {
 	display: inline-block;
@@ -243,7 +227,7 @@ h1.name {
 	vertical-align: top;
 	display: inline-block;
 	max-width: 300px;
-	text-align: left;
+	text-align: center;
 	margin-top: 15px;
 	margin-left: 15px;
 }
@@ -261,21 +245,14 @@ h1.name {
 	font-size: 16px;
 }
 
-/* Achievements ends */
-
-
-
-/* Timeline styles*/
-
-
 ol {
 	position: relative;
 	display: block;
 	margin: 100px 0;
 	height: 2px;
-	background: #EEF0F7;
-
+	background: #2B2D2F;
 }
+
 ol::before,
 ol::after {
 	content: "";
@@ -287,9 +264,11 @@ ol::after {
   	border-radius: 10px;
 	border: 0px solid #31708F;
 }
+
 ol::before {
 	left: -5px;
 }
+
 ol::after {
 	right: -10px;
 	border: 0px solid transparent;
@@ -298,22 +277,22 @@ ol::after {
   	border-radius: 3px;
 }
 
-/* ---- Timeline elements ---- */
 li {
 	position: relative;
 	display: inline-block;
-	float: left;
 	width: 25%;
   	height: 50px;
 }
+
 li .line {
   position: absolute;
   top: -47px;
   left: 1%;
   font-size: 20px;
   font-weight: 600;
-  color: #04143A;
+  color: #C4C4C4;
 }
+
 li .point {
 	content: "";
 	top: -7px;
@@ -323,9 +302,10 @@ li .point {
 	height: 8px;
 	border: 4px solid #fff;
 	border-radius: 10px;
-	background: #34568B;
+	background: #789ABC;
   position: absolute;
 }
+
 li .description {
   display: none;
   padding: 10px 0;
@@ -339,18 +319,18 @@ li .description {
   line-height: 25px;
   color: #5B6A9A;
 }
+
 .description::before {
   content: '';
   width: 0; 
   height: 0; 
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
-  border-bottom: 5px solid #f4f4f4;
+  border-bottom: 5px solid #2B2D2F;
   position: absolute;
   top: -5px;
   left: 43%;
 }
-
 
 .timeline .date{
 	font-size: 14px;
@@ -358,19 +338,13 @@ li .description {
 	font-weight: 300;
 }
 
-/* ---- Hover effects ---- */
 li:hover {
   color: #48A4D2;
 }
+
 li .description {
   display: block;
 }
-
-/*timeline ends*/
-
-
-
-/* Media queries*/
 
 @media(max-width: 1024px){
 	.container {
@@ -393,7 +367,7 @@ li .description {
 
 	.card {
 		padding: 15px;
-		text-align: left;
+		text-align: center;
 	}
 	.card h2 {
 		font-size: 70px;
@@ -416,10 +390,9 @@ li .description {
 	}
 }
 
-
 @media(max-width: 425px) {
 	h1.name {
-		font-size: 40px;
+		font-size: 40px; 
 	}
 
 	.card , .sections {
@@ -431,7 +404,7 @@ li .description {
 
 	.timeline{
 		display: none;
-		}
+	}
 
 	.job-title {
 		position: absolute;
@@ -462,23 +435,22 @@ li .description {
 	<div class="container">
 		<div class="hero">
 			<h1 class="name"><strong>Joseph Saada</strong></h1>
-			<span class="job-title">Developer</span>
-			<span class="email">jsaada2003@gmail.com</span>
-
+			
+			<span class="email">jsaada2003@gmail.com</span> 
+			<span class="email"><a href="https://www.linkedin.com/in/joseph-saada/" target="_blank">Linkedin</a></span>
 			<h2 class="lead">Software Engineer at UCI, Web and Mobile Development</h2> 
 
-            <h3 class="end"> Hi, I'm Joseph Saada and I currently attend UCI for Software Engineering with an intended graduation date of 2025, however if needed a graduation of 2024 is very possible. A bit about me is that I love to learn and especially love being proven wrong as it fuels the fire. Excited for any opportunities that may come my way, and thanks for coming to my minimalistic webstie and feel free to click on any of my projects to see and learn more.  </h3>
+            <h3 class="end"> Hi, I'm Joseph Saada and I currently attend UCI for Software Engineering with an intended graduation date of 2025, however if needed a graduation of 2024 is very possible. A bit about me is that I love to learn and especially love being proven wrong as it fuels the fire. Excited for any opportunities that may come my way, and thanks for coming to my minimalistic website and feel free to click on any of my projects to see and learn more.  </h3>
 		</div>
 	</div>
 
-<!-- Skills and intrest section -->
+	<!-- Skills and interest section -->
 	<div class="container">
 
 		<div class="sections">
 			<h2 class="section-title">Skills</h2>
 
 			<div class="list-card">
-				
 				<div>
 					<h3>Frameworks and scripting languages</h3>
 					<span>React, Javascript, Python</span>
@@ -498,9 +470,8 @@ li .description {
 					<span>Java, Rust, C++, C#</span>
 				</div>
 			</div>
-
-
 		</div>
+		
 		<div class="sections">
 				<h2 class="section-title">Interests</h2>
 				
@@ -516,71 +487,74 @@ li .description {
 						<h3>Hacking</h3>
 						<span>SQL Injection, DOM Injection, IP Stresser</span>
 					</div>
+				</div>		 
+
+				<div class="list-card">
+					<div>
+						<h3>Consulting</h3>
+						<span>Traveling, Communication, Presentations</span>
+					</div>
 				</div>		
 		</div>
 	</div>
 
 	<!-- Achievements -->
-
 	<div class="container cards">
-		<a href="https://play.google.com/store/apps/details?id=com.roasterino.app">
+		<a href="https://christrannn.github.io/pretendFinal/">
 		<div class="card"> 
-            
 			<div class="skill-meta">
-				<h3>Rosery</h3>
-				<span>React Native Mobile App made using Expo and NoSQL (Firebase)</span>
+				<h3>Tap2Play</h3>
+				<span>Mobile Friendly React app that teaches basic science concepts for a local musuem</span>
 			</div>
 		</div>
-</a>
+		</a>
 			
-<a href="https://foodpool.app/">
+		<a href="https://foodpool.app/">
 		<div class="card">
 			<div class="skill-meta">
 				<h3>FoodPool</h3>
 				<span>React Web App that serves as a waitlist, made using MySQL</span>
 			</div>
 		</div> 
-</a>
+		</a>
 
-
-<a href="https://chrome.google.com/webstore/detail/codeninjasautosave/fmpibjnfgeppejmmohagaondolmolfop/overview">
+		<a href="https://chrome.google.com/webstore/detail/codeninjasautosave/fmpibjnfgeppejmmohagaondolmolfop/overview">
 		<div class="card">
 			<div class="skill-meta">
 				<h3>Auto Saver for Code Ninjas</h3>
 				<span>Javascript DOM Injection</span>
 			</div>
 		</div>
-</a>
+		</a>
 
-<a href="https://github.com/JosephSaada">
+		<a href="https://github.com/JosephSaada">
 		<div class="card">
 			<div class="skill-meta">
 				<h3>Github</h3>
 				<span>and other small projects</span>
 			</div>
 		</div>
+		</a>
 	</div> 
-    </a>
 
-	<!-- Timeeline -->
-
+	<!-- Timeline -->
 	<div class="container">
 		<ol class="timeline">
 		  <li>
 		    <p class="line">Experiences</p>
 		    <span class="point"></span>
 		    <p class="description">
-		      Looking for Internship
+		      Walmart Internship
 		    </p>
-		    <span class="date">Today</span>
+		    <span class="date">June 2024</span>
 		  </li>
 
 		  <li>
 		    <span class="point"></span>
 		    <p class="description">
-		      FoodPool Web Dev
+		      MSG Internship
 		    </p>
-		    <span class="date">Apr. 2022 - Feb. 2022</span>
+		    <span class="date">Aug. 2023 - May 2023</span>
 		  </li>
 
 		  		  <li>
@@ -592,13 +566,7 @@ li .description {
 		    <span class="date">2025 - 2021</span>
 		  </li>
 
-		  		  <li>
-		    <span class="point"></span>
-		    <p class="description">
-		      Fullerton Union High School
-		    </p>
-		    <span class="date">2021 - 2017</span>
-		  </li>
+
 		</ol>
 
 	</div>
@@ -608,7 +576,7 @@ li .description {
 
 
 	<footer class="container">
-		<span style="font-size: 16px; margin-top: ">Coded by Joseph Saada</a></span>
+		<span style="font-size: 16px;">Coded by Joseph Saada</a></span>
 	</footer>
 
 
