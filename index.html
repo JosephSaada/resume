@@ -22,7 +22,8 @@
 		}
 		
 		.container {
-			max-width: 900px;
+			max-width: 95%;
+			width: 100%;
 			margin: 0 auto;
 			padding: 40px 20px;
 		}
@@ -37,14 +38,14 @@
 		}
 		
 		.header h1 {
-			font-size: 2.5rem;
+			font-size: clamp(2rem, 4vw, 3.5rem);
 			font-weight: 600;
 			margin-bottom: 10px;
 			color: #ffffff;
 		}
 		
 		.header .title {
-			font-size: 1.2rem;
+			font-size: clamp(1rem, 2vw, 1.5rem);
 			color: #888888;
 			margin-bottom: 20px;
 			font-weight: 400;
@@ -53,7 +54,7 @@
 		.contact-info {
 			display: flex;
 			justify-content: center;
-			gap: 30px;
+			gap: clamp(20px, 4vw, 40px);
 			flex-wrap: wrap;
 			margin-top: 20px;
 		}
@@ -63,6 +64,7 @@
 			text-decoration: none;
 			font-weight: 400;
 			transition: color 0.3s ease;
+			font-size: clamp(0.9rem, 1.5vw, 1.1rem);
 		}
 		
 		.contact-item:hover {
@@ -73,27 +75,27 @@
 			background: #1a1a1a;
 			border: 1px solid #333333;
 			color: #ffffff;
-			padding: 20px;
+			padding: clamp(15px, 3vw, 25px);
 			border-radius: 8px;
 			margin: 20px 0;
 			text-align: center;
 		}
 		
 		.graduation-highlight h2 {
-			font-size: 1.3rem;
+			font-size: clamp(1.1rem, 2vw, 1.6rem);
 			margin-bottom: 8px;
 			font-weight: 500;
 		}
 		
 		.graduation-highlight p {
-			font-size: 1rem;
+			font-size: clamp(0.9rem, 1.5vw, 1.2rem);
 			color: #cccccc;
 		}
 		
 		.sections {
 			display: grid;
-			grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-			gap: 30px;
+			grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+			gap: clamp(20px, 3vw, 40px);
 			margin-top: 30px;
 		}
 		
@@ -101,11 +103,11 @@
 			background: #111111;
 			border: 1px solid #333333;
 			border-radius: 8px;
-			padding: 30px;
+			padding: clamp(20px, 4vw, 40px);
 		}
 		
 		.section h2 {
-			font-size: 1.5rem;
+			font-size: clamp(1.3rem, 2.5vw, 1.8rem);
 			margin-bottom: 20px;
 			color: #ffffff;
 			font-weight: 500;
@@ -117,28 +119,28 @@
 		
 		.job {
 			margin-bottom: 30px;
-			padding: 20px;
+			padding: clamp(15px, 3vw, 25px);
 			background: #0a0a0a;
 			border-radius: 6px;
 			border-left: 3px solid #333333;
 		}
 		
 		.job h3 {
-			font-size: 1.2rem;
+			font-size: clamp(1.1rem, 2vw, 1.4rem);
 			font-weight: 500;
 			color: #ffffff;
 			margin-bottom: 5px;
 		}
 		
 		.job .company {
-			font-size: 1rem;
+			font-size: clamp(0.95rem, 1.5vw, 1.1rem);
 			color: #888888;
 			font-weight: 400;
 			margin-bottom: 5px;
 		}
 		
 		.job .date {
-			font-size: 0.9rem;
+			font-size: clamp(0.85rem, 1.2vw, 1rem);
 			color: #666666;
 			margin-bottom: 15px;
 		}
@@ -153,6 +155,8 @@
 			padding-left: 15px;
 			position: relative;
 			color: #cccccc;
+			font-size: clamp(0.9rem, 1.3vw, 1rem);
+			line-height: 1.6;
 		}
 		
 		.job li:before {
@@ -165,13 +169,13 @@
 		
 		.skills-grid {
 			display: grid;
-			grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-			gap: 15px;
+			grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+			gap: clamp(15px, 2vw, 25px);
 		}
 		
 		.skill-category {
 			background: #0a0a0a;
-			padding: 15px;
+			padding: clamp(12px, 2.5vw, 20px);
 			border-radius: 6px;
 			border-left: 2px solid #333333;
 		}
@@ -180,11 +184,13 @@
 			color: #ffffff;
 			margin-bottom: 10px;
 			font-weight: 500;
+			font-size: clamp(1rem, 1.5vw, 1.2rem);
 		}
 		
 		.skill-category p {
 			color: #888888;
-			font-size: 0.9rem;
+			font-size: clamp(0.85rem, 1.2vw, 1rem);
+			line-height: 1.5;
 		}
 		
 		.navigation {
@@ -197,11 +203,12 @@
 			border: 1px solid #333333;
 			color: #cccccc;
 			text-decoration: none;
-			padding: 12px 24px;
+			padding: clamp(10px, 2vw, 15px) clamp(20px, 3vw, 30px);
 			border-radius: 6px;
 			font-weight: 400;
 			transition: all 0.3s ease;
 			display: inline-block;
+			font-size: clamp(0.9rem, 1.5vw, 1.1rem);
 		}
 		
 		.nav-link:hover {
@@ -210,13 +217,35 @@
 			border-color: #444444;
 		}
 		
-		@media (max-width: 768px) {
-			.header h1 {
-				font-size: 2rem;
+		/* Large screens */
+		@media (min-width: 1400px) {
+			.container {
+				max-width: 85%;
 			}
 			
-			.header .title {
-				font-size: 1.1rem;
+			.sections {
+				grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+			}
+			
+			.skills-grid {
+				grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+			}
+		}
+		
+		/* Extra large screens */
+		@media (min-width: 1800px) {
+			.container {
+				max-width: 80%;
+			}
+			
+			.sections {
+				grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+			}
+		}
+		
+		@media (max-width: 768px) {
+			.container {
+				padding: 20px 15px;
 			}
 			
 			.contact-info {
@@ -225,6 +254,11 @@
 			}
 			
 			.sections {
+				grid-template-columns: 1fr;
+				gap: 20px;
+			}
+			
+			.skills-grid {
 				grid-template-columns: 1fr;
 			}
 		}
@@ -331,3 +365,4 @@
 	</div>
 </body>
 </html>
+
