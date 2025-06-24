@@ -1,1 +1,1 @@
-I WANT A JOB ABOVE MINIMUM WAGE
+Welcome to my resume code!

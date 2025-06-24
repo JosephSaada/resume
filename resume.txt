@@ -1,0 +1,47 @@
+Joseph Saada
+714-267-4660 | jsaada@uci.edu| github.com/JosephSaada | Joseph Saada | LinkedIn
+EDUCATION
+The University of California, Irvine September 2021 - June 2024
+Bachelor of Science in Software Engineering (Donald Bren School of Information and Computer Sciences)
+CodePath December 2021 - March 2022
+Android Development Certificate (Kotlin)
+TECHNICAL SKILLS
+Programming Languages: Python, C++, Java, Javascript, Typescript, C#, R, Kotlin, Typescript, MySQL, Rust, PHP
+Software: React, Git, Android Studio, Unity, Jira, Unreal Engine, Visual Studio Code, AWS, Node.js, Maven, Jest Testing
+WORK EXPERIENCE
+Walmart Global Tech, Software Engineer II June 2024 - June 2025
+● Engineered a comprehensive solution using React (TypeScript) on the frontend and Java Spring Boot on the
+backend API, streamlining the efficient management of internal microsites and optimizing developer workflows.
+● Empowered developers to view and edit microsite configurations (name, user permissions, status, support pages,
+etc.) directly through the interface—eliminating the need for manual code changes.
+● Boosted accessibility and efficiency by 65% through the implementation of an automated, dedicated microsite
+management system, significantly reducing maintenance time by an average of 2-3 hours per week.
+● Proactively monitored a developer community chat and addressed internal issues while quickly learning new
+codebases on demand, ensuring prompt resolution of technical challenges and developer issues.
+● Implemented comprehensive unit and integration tests using multiple testing tools, like Jest for React component
+testing and JUnit for Java API validation to guarantee robust API reliability, seamless front-end functionality
+Course Coyote, Software Engineer August 2023 - July 2024
+● Wrote scripts which efficiently scraped website urls and html files using python, beautiful soup, and scraping bee;
+pulled data from over 1000 educational sites to provide a central location for all the data.
+● Analyzed the data and reiterated code until 98% of all the needed data was getting pulled and no unneeded data
+was being pulled to work on thousands of educational sites.
+● Increased scraping efficiency by 45% through implementing the Open AI API in the codebase and saved API call
+costs through estimating token amounts, splitting up requests, and minimizing output.
+Madison Square Garden Entertainment Corp., Software Engineer Internship May 2023 - August 2023
+● Created & documented client-side C++ APIs connecting the Unreal Engine to a custom multiplayer game server.
+● Enabled multi-user, networked, and persistent virtual environments while emphasizing database design and
+management, network protocols, and concurrency control to accommodate large numbers of simultaneous users
+● Managed the client/server networking layer and protocols while collaborating closely with the Interactive Lead to
+design the title's multiplayer tech stack, and to implement and optimize its massively multiplayer platform
+UCI School of Physical Sciences, Information Technology Assistant January 2023 - May 2023
+● Providing comprehensive IT support to a faculty of over 100 professionals
+● Leveraged expertise in software development and cloud computing to skillfully handle crucial IT tasks using the
+LAMP stack (Linux, Apache, MySQL, and PHP) and Azure cloud computing to set up user forms
+● Ensured smooth operations of IT systems, such as configuring IP addresses, setting up computers, and resolving
+IT-related issues swiftly and efficiently to contribute to the success of faculty members and their research
+Pretend City, Web Developer for NFC Products January 2023 - June 2023
+● Freelance work after receiving $10,000 in funding from the company to implement idea presented to them
+● Created an application that allows visitors to explore exhibits by using ReactJS, Firebase, and Google Analytics,
+and modified usability, which resulted in a 30% increase in user engagement
+● Collaborated with project managers in a scrum environment to track key data points on museum visitors to
+improve access to information on exhibit learning topics

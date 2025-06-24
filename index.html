@@ -1,489 +1,351 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-
+<html lang="en">
 <head>
-	<script data-ad-client="ca-pub-7815261692845944" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
-	</script>
 	<meta charset="utf-8">
-	<title>JosephSaada</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Joseph Saada - Software Engineer</title>
 	<style>
-		body,
-		html {
-			position: absolute;
+		@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+		
+		* {
 			margin: 0;
 			padding: 0;
-			width: 100%;
-			height: 100%;
-			overflow: hidden;
-			z-index: -1;
+			box-sizing: border-box;
+		}
+		
+		body {
+			font-family: 'Inter', sans-serif;
+			line-height: 1.6;
+			color: #333;
+			background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+			min-height: 100vh;
+		}
+		
+		.container {
+			max-width: 1000px;
+			margin: 0 auto;
+			padding: 20px;
+		}
+		
+		.header {
+			background: rgba(255, 255, 255, 0.95);
+			border-radius: 20px;
+			padding: 40px;
+			margin-bottom: 30px;
+			backdrop-filter: blur(10px);
+			box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+			text-align: center;
+		}
+		
+		.header h1 {
+			font-size: 3rem;
+			font-weight: 700;
+			margin-bottom: 10px;
+			background: linear-gradient(135deg, #667eea, #764ba2);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			background-clip: text;
+		}
+		
+		.header .title {
+			font-size: 1.5rem;
+			color: #666;
+			margin-bottom: 20px;
+			font-weight: 500;
+		}
+		
+		.contact-info {
+			display: flex;
+			justify-content: center;
+			gap: 30px;
+			flex-wrap: wrap;
+			margin-top: 20px;
+		}
+		
+		.contact-item {
+			color: #667eea;
+			text-decoration: none;
+			font-weight: 500;
+			transition: color 0.3s ease;
+		}
+		
+		.contact-item:hover {
+			color: #764ba2;
+		}
+		
+		.graduation-highlight {
+			background: linear-gradient(135deg, #4CAF50, #45a049);
 			color: white;
+			padding: 20px;
+			border-radius: 15px;
+			margin: 20px 0;
+			text-align: center;
+			box-shadow: 0 10px 30px rgba(76, 175, 80, 0.3);
 		}
-
-		canvas {
+		
+		.graduation-highlight h2 {
+			font-size: 1.5rem;
+			margin-bottom: 10px;
+		}
+		
+		.graduation-highlight p {
+			font-size: 1.1rem;
+			opacity: 0.9;
+		}
+		
+		.sections {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+			gap: 30px;
+			margin-top: 30px;
+		}
+		
+		.section {
+			background: rgba(255, 255, 255, 0.95);
+			border-radius: 20px;
+			padding: 30px;
+			backdrop-filter: blur(10px);
+			box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+			transition: transform 0.3s ease;
+		}
+		
+		.section:hover {
+			transform: translateY(-5px);
+		}
+		
+		.section h2 {
+			font-size: 1.8rem;
+			margin-bottom: 20px;
+			color: #667eea;
+			font-weight: 600;
+		}
+		
+		.work-experience {
+			grid-column: 1 / -1;
+		}
+		
+		.job {
+			margin-bottom: 30px;
+			padding: 20px;
+			background: #f8f9ff;
+			border-radius: 15px;
+			border-left: 4px solid #667eea;
+		}
+		
+		.job h3 {
+			font-size: 1.3rem;
+			font-weight: 600;
+			color: #333;
+			margin-bottom: 5px;
+		}
+		
+		.job .company {
+			font-size: 1.1rem;
+			color: #667eea;
+			font-weight: 500;
+			margin-bottom: 5px;
+		}
+		
+		.job .date {
+			font-size: 0.9rem;
+			color: #666;
+			margin-bottom: 15px;
+		}
+		
+		.job ul {
+			list-style: none;
+			padding-left: 0;
+		}
+		
+		.job li {
+			margin-bottom: 8px;
+			padding-left: 20px;
+			position: relative;
+		}
+		
+		.job li:before {
+			content: "•";
+			color: #667eea;
 			position: absolute;
-			width: 100%;
-			height: 100%;
-			background: #000;
-			cursor: pointer;
-			z-index: -1;
+			left: 0;
+			font-weight: bold;
 		}
-	</style> 
-    <script data-ad-client="ca-pub-7815261692845944" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		
+		.skills-grid {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+			gap: 15px;
+		}
+		
+		.skill-category {
+			background: #f8f9ff;
+			padding: 15px;
+			border-radius: 10px;
+			border-left: 3px solid #667eea;
+		}
+		
+		.skill-category h4 {
+			color: #333;
+			margin-bottom: 10px;
+			font-weight: 600;
+		}
+		
+		.skill-category p {
+			color: #666;
+			font-size: 0.9rem;
+		}
+		
+		.navigation {
+			text-align: center;
+			margin-top: 30px;
+		}
+		
+		.nav-links {
+			display: flex;
+			justify-content: center;
+			gap: 20px;
+			flex-wrap: wrap;
+		}
+		
+		.nav-link {
+			background: rgba(255, 255, 255, 0.2);
+			color: white;
+			text-decoration: none;
+			padding: 12px 24px;
+			border-radius: 25px;
+			font-weight: 500;
+			transition: all 0.3s ease;
+			backdrop-filter: blur(10px);
+		}
+		
+		.nav-link:hover {
+			background: rgba(255, 255, 255, 0.3);
+			transform: translateY(-2px);
+		}
+		
+		@media (max-width: 768px) {
+			.header h1 {
+				font-size: 2rem;
+			}
+			
+			.header .title {
+				font-size: 1.2rem;
+			}
+			
+			.contact-info {
+				flex-direction: column;
+				gap: 15px;
+			}
+			
+			.sections {
+				grid-template-columns: 1fr;
+			}
+		}
+	</style>
 </head>
-
 <body>
-	<canvas></canvas>  
-<br> Welcome to my website!  
-<br> Yooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo 
-<br> Check out my app:  
-<a href="https://play.google.com/store/apps/details?id=com.JosephSaadaFoundation.JosephSaadaFoundation">JosephSaadaFoundation</a>  
-<br>Talk to my injury attorney lawyers:  
-<a href="https://youtu.be/dQw4w9WgXcQ">Cellino and Barnes</a>       
-<br>Benefits of bad grades:
-<a href="https://www.tomorrowtides.com/benefitsofbadgrades.html">Tomorrow Tides</a>  
-<br><button onclick="document.location='Socials.html'">Socials</button>   
+	<div class="container">
+		<header class="header">
+			<h1>Joseph Saada</h1>
+			<p class="title">Software Engineer II @ Walmart Global Tech</p>
+			<div class="graduation-highlight">
+				<h2>🎓 Recent UCI Graduate</h2>
+				<p>Bachelor of Science in Software Engineering (June 2024) • One Year at Walmart Global Tech</p>
+			</div>
+			<div class="contact-info">
+				<a href="tel:714-267-4660" class="contact-item">📞 714-267-4660</a>
+				<a href="mailto:jsaada@uci.edu" class="contact-item">✉️ jsaada@uci.edu</a>
+				<a href="https://github.com/JosephSaada" class="contact-item" target="_blank">🔗 GitHub</a>
+				<a href="https://www.linkedin.com/in/joseph-saada/" class="contact-item" target="_blank">💼 LinkedIn</a>
+			</div>
+		</header>
 
-<br><button onclick="document.location='katy.html'">Katy Perry</button>   
+		<div class="sections">
+			<section class="section work-experience">
+				<h2>Work Experience</h2>
+				
+				<div class="job">
+					<h3>Software Engineer II</h3>
+					<div class="company">Walmart Global Tech</div>
+					<div class="date">June 2024 - June 2025</div>
+					<ul>
+						<li>Engineered a comprehensive solution using React (TypeScript) on the frontend and Java Spring Boot on the backend API, streamlining the efficient management of internal microsites and optimizing developer workflows</li>
+						<li>Empowered developers to view and edit microsite configurations directly through the interface—eliminating the need for manual code changes</li>
+						<li>Boosted accessibility and efficiency by 65% through implementation of an automated, dedicated microsite management system, reducing maintenance time by 2-3 hours per week</li>
+						<li>Implemented comprehensive unit and integration tests using Jest for React and JUnit for Java API validation</li>
+					</ul>
+				</div>
 
-  <script>  
-  "use strict";
-///////////////// worker thread code ///////////////////
-const theLastExperience = noWorkers => {
-	"use strict";
-	// ---- robot structure ----
-	const struct = {
-		points: [
-			{
-				x: 0,
-				y: -4,
-				f(s, d) {
-					this.y -= 0.01 * s * ts;
-				}
-			},
-			{
-				x: 0,
-				y: -16,
-				f(s, d) {
-					this.y -= 0.02 * s * d * ts;
-				}
-			},
-			{
-				x: 0,
-				y: 12,
-				f(s, d) {
-					this.y += 0.02 * s * d * ts;
-				}
-			},
-			{ x: -12, y: 0 },
-			{ x: 12, y: 0 },
-			{
-				x: -3,
-				y: 34,
-				f(s, d) {
-					if (d > 0) {
-						this.x += 0.01 * s * ts;
-						this.y -= 0.015 * s * ts;
-					} else {
-						this.y += 0.02 * s * ts;
-					}
-				}
-			},
-			{
-				x: 3,
-				y: 34,
-				f(s, d) {
-					if (d > 0) {
-						this.y += 0.02 * s * ts;
-					} else {
-						this.x -= 0.01 * s * ts;
-						this.y -= 0.015 * s * ts;
-					}
-				}
-			},
-			{
-				x: -28,
-				y: 0,
-				f(s, d) {
-					this.x += this.vx * 0.025 * ts;
-					this.y -= 0.001 * s * ts;
-				}
-			},
-			{
-				x: 28,
-				y: 0,
-				f(s, d) {
-					this.x += this.vx * 0.025 * ts;
-					this.y -= 0.001 * s * ts;
-				}
-			},
-			{
-				x: -3,
-				y: 64,
-				f(s, d) {
-					this.y += 0.015 * s * ts;
-					if (d > 0) {
-						this.y -= 0.01 * s * ts;
-					} else {
-						this.y += 0.05 * s * ts;
-					}
-				}
-			},
-			{
-				x: 3,
-				y: 64,
-				f(s, d) {
-					this.y += 0.015 * s * ts;
-					if (d > 0) {
-						this.y += 0.05 * s * ts;
-					} else {
-						this.y -= 0.01 * s * ts;
-					}
-				}
-			}
-		],
-		links: [
-			{ p0: 3, p1: 7, size: 12, lum: 0.5 },
-			{ p0: 1, p1: 3, size: 24, lum: 0.5 },
-			{ p0: 1, p1: 0, size: 60, lum: 0.5, disk: 1 },
-			{ p0: 5, p1: 9, size: 16, lum: 0.5 },
-			{ p0: 2, p1: 5, size: 32, lum: 0.5 },
-			{ p0: 1, p1: 2, size: 50, lum: 1 },
-			{ p0: 6, p1: 10, size: 16, lum: 1.5 },
-			{ p0: 2, p1: 6, size: 32, lum: 1.5 },
-			{ p0: 4, p1: 8, size: 12, lum: 1.5 },
-			{ p0: 1, p1: 4, size: 24, lum: 1.5 }
-		]
-	};
-	class Robot {
-		constructor(color, light, size, x, y, struct) {
-			this.x = x;
-			this.points = [];
-			this.links = [];
-			this.frame = 0;
-			this.dir = 1;
-			this.size = size;
-			this.color = Math.round(color);
-			this.light = light;
-			// ---- create points ----
-			for (const p of struct.points) {
-				this.points.push(new Robot.Point(size * p.x + x, size * p.y + y, p.f));
-			}
-			// ---- create links ----
-			for (const link of struct.links) {
-				const p0 = this.points[link.p0];
-				const p1 = this.points[link.p1];
-				const dx = p0.x - p1.x;
-				const dy = p0.y - p1.y;
-				this.links.push(
-					new Robot.Link(
-						this,
-						p0,
-						p1,
-						Math.sqrt(dx * dx + dy * dy),
-						link.size * size / 3,
-						link.lum,
-						link.force,
-						link.disk
-					)
-				);
-			}
-		}
-		update() {
-			if (++this.frame % Math.round(20 / ts) === 0) this.dir = -this.dir;
-			if (this === pointer.dancerDrag && this.size < 16 && this.frame > 600) {
-				pointer.dancerDrag = null;
-				dancers.push(
-					new Robot(
-						this.color + 90,
-						this.light * 1.25,
-						this.size * 2,
-						pointer.x,
-						pointer.y - 100 * this.size * 2,
-						struct
-					)
-				);
-				dancers.sort(function(d0, d1) {
-					return d0.size - d1.size;
-				});
-			}
-			// ---- update links ----
-			for (const link of this.links) link.update();
-			// ---- update points ----
-			for (const point of this.points) point.update(this);
-			// ---- ground ----
-			for (const link of this.links) {
-				const p1 = link.p1;
-				if (p1.y > canvas.height * ground - link.size * 0.5) {
-					p1.y = canvas.height * ground - link.size * 0.5;
-					p1.x -= p1.vx;
-					p1.vx = 0;
-					p1.vy = 0;
-				}
-			}
-			// ---- center position ----
-			this.points[3].x += (this.x - this.points[3].x) * 0.001;
-		}
-		draw() {
-			for (const link of this.links) {
-				if (link.size) {
-					const dx = link.p1.x - link.p0.x;
-					const dy = link.p1.y - link.p0.y;
-					const a = Math.atan2(dy, dx);
-					// ---- shadow ----
-					ctx.save();
-					ctx.translate(link.p0.x + link.size * 0.25, link.p0.y + link.size * 0.25);
-					ctx.rotate(a);
-					ctx.drawImage(
-						link.shadow,
-						-link.size * 0.5,
-						-link.size * 0.5
-					);
-					ctx.restore();
-					// ---- stroke ----
-					ctx.save();
-					ctx.translate(link.p0.x, link.p0.y);
-					ctx.rotate(a);
-					ctx.drawImage(
-						link.image,
-						-link.size * 0.5,
-						-link.size * 0.5
-					);
-					ctx.restore();
-				}
-			}
-		}
-	}
-	Robot.Link = class Link {
-		constructor(parent, p0, p1, dist, size, light, force, disk) {
-			this.p0 = p0;
-			this.p1 = p1;
-			this.distance = dist;
-			this.size = size;
-			this.light = light || 1.0;
-			this.force = force || 0.5;
-			this.image = this.stroke(
-				"hsl(" + parent.color + " ,30%, " + parent.light * this.light + "%)",
-				true, disk, dist, size
-			);
-			this.shadow = this.stroke("rgba(0,0,0,0.5)", false, disk, dist, size);
-		}
-		update() {
-			const p0 = this.p0;
-			const p1 = this.p1;
-			const dx = p1.x - p0.x;
-			const dy = p1.y - p0.y;
-			const dist = Math.sqrt(dx * dx + dy * dy);
-			if (dist > 0.0) {
-				const tw = p0.w + p1.w;
-				const r1 = p1.w / tw;
-				const r0 = p0.w / tw;
-				const dz = (this.distance - dist) * this.force;
-				const sx = dx / dist * dz;
-				const sy = dy / dist * dz;
-				p1.x += sx * r0;
-				p1.y += sy * r0;
-				p0.x -= sx * r1;
-				p0.y -= sy * r1;
-			}
-		}
-		stroke(color, axis, disk, dist, size) {
-			let image;
-			if (noWorkers) {
-				image = document.createElement("canvas");
-				image.width = dist + size;
-				image.height = size;
-			} else {
-				image = new OffscreenCanvas(dist + size, size);
-			}
-			const ict = image.getContext("2d");
-			ict.beginPath();
-			ict.lineCap = "round";
-			ict.lineWidth = size;
-			ict.strokeStyle = color;
-			if (disk) {
-				ict.arc(size * 0.5 + dist, size * 0.5, size * 0.5, 0, 2 * Math.PI);
-				ict.fillStyle = color;
-				ict.fill();
-			} else {
-				ict.moveTo(size * 0.5, size * 0.5);
-				ict.lineTo(size * 0.5 + dist, size * 0.5);
-				ict.stroke();
-			}
-			if (axis) {
-				const s = size / 10;
-				ict.fillStyle = "#000";
-				ict.fillRect(size * 0.5 - s, size * 0.5 - s, s * 2, s * 2);
-				ict.fillRect(size * 0.5 - s + dist, size * 0.5 - s, s * 2, s * 2);
-			}
-			return image;
-		}
-	};
-	Robot.Point = class Point {
-		constructor(x, y, fn, w) {
-			this.x = x;
-			this.y = y;
-			this.w = w || 0.5;
-			this.fn = fn || null;
-			this.px = x;
-			this.py = y;
-			this.vx = 0.0;
-			this.vy = 0.0;
-		}
-		update(robot) {
-			// ---- dragging ----
-			if (robot === pointer.dancerDrag && this === pointer.pointDrag) {
-				this.x += (pointer.x - this.x) * 0.1;
-				this.y += (pointer.y - this.y) * 0.1;
-			}
-			// ---- dance ----
-			if (robot !== pointer.dancerDrag) {
-				this.fn && this.fn(16 * Math.sqrt(robot.size), robot.dir);
-			}
-			// ---- verlet integration ----
-			this.vx = this.x - this.px;
-			this.vy = this.y - this.py;
-			this.px = this.x;
-			this.py = this.y;
-			this.vx *= 0.995;
-			this.vy *= 0.995;
-			this.x += this.vx;
-			this.y += this.vy + 0.01 * ts;
-		}
-	};
-	// ---- init ----
-	const dancers = [];
-	let ground = 1.0;
-	let canvas = { width: 0, height: 0, resize: true };
-	let ctx = null;
-	let pointer = { x: 0, y: 0, dancerDrag: null, pointDrag: null };
-	let ts = 1;
-	let lastTime = 0;
-	// ---- messages from the main thread ----
-	const message = e => {
-		switch (e.data.msg) {
-			case "start":
-				canvas.elem = e.data.elem;
-				canvas.width = canvas.elem.width;
-				canvas.height = canvas.elem.height;
-				ctx = canvas.elem.getContext("2d");
-				initRobots();
-				requestAnimationFrame(run);
-				break;
-			case "resize":
-				canvas.width = e.data.width;
-				canvas.height = e.data.height;
-				canvas.resize = true;
-				break;
-			case "pointerMove":
-				pointer.x = e.data.x;
-				pointer.y = e.data.y;
-				break;
-			case "pointerDown":
-				pointer.x = e.data.x;
-				pointer.y = e.data.y;
-				for (const dancer of dancers) {
-					for (const point of dancer.points) {
-						const dx = pointer.x - point.x;
-						const dy = pointer.y - point.y;
-						const d = Math.sqrt(dx * dx + dy * dy);
-						if (d < 60) {
-							pointer.dancerDrag = dancer;
-							pointer.pointDrag = point;
-							dancer.frame = 0;
-						}
-					}
-				}
-				break;
-			case "pointerUp":
-				pointer.dancerDrag = null;
-				break;
-		}
-	};
-	// ---- resize screen ----
-	const resize = () => {
-		canvas.elem.width = canvas.width;
-		canvas.elem.height = canvas.height;
-		canvas.resize = false;
-		ground = canvas.height > 500 ? 0.85 : 1.0;
-		for (let i = 0; i < dancers.length; i++) {
-			dancers[i].x = (i + 2) * canvas.width / 9;
-		}
-	}
-	// ---- main loop ----
-	const run = (time) => {
-		requestAnimationFrame(run);
-		if (canvas.resize === true) resize();
-		// ---- adjust speed to screen freq ----
-		if (lastTime !== 0) {
-			const t = (time - lastTime) / 16;
-			ts += (t - ts) * 0.1;
-			if (ts > 1) ts = 1;
-		}
-		lastTime = time;
-		// ---- clear screen ----
-		ctx.clearRect(0, 0, canvas.width, canvas.height);
-		ctx.fillStyle = "#222";
-		ctx.fillRect(0, 0, canvas.width, canvas.height * 0.15);
-		ctx.fillRect(0, canvas.height * 0.85, canvas.width, canvas.height * 0.15);
-		// ---- animate robots ----
-		for (const dancer of dancers) {
-			dancer.update();
-			dancer.draw();
-		}
-	};
-	const initRobots = () => {
-		// ---- instanciate robots ----
-		ground = canvas.height > 500 ? 0.85 : 1.0;
-		for (let i = 0; i < 6; i++) {
-			dancers.push(
-				new Robot(
-					i * 360 / 7,
-					80,
-					Math.sqrt(Math.min(canvas.width, canvas.height)) / 6,
-					(i + 2) * canvas.width / 9,
-					canvas.height * 0.5 - 100,
-					struct
-				)
-			);
-		}
-	};
-	// ---- main thread vs. worker
-	if (noWorkers) {
-		// ---- emulate postMessage interface ----
-		return {
-			postMessage(data) {
-				message({ data: data });
-			}
-		};
-	} else {
-		// ---- worker messaging ----
-		onmessage = message;
-	}
-};
-///////////////// main thread code ///////////////////
-let worker = null;
-const createWorker = fn => {
-	const URL = window.URL || window.webkitURL;
-	return new Worker(URL.createObjectURL(new Blob(["(" + fn + ")()"])));
-};
-// ---- init canvas ----
-const canvas = document.querySelector("canvas");
-canvas.width = canvas.offsetWidth;
-canvas.height = canvas.offsetHeight;
-// ---- instanciate worker ----
-if (window.Worker && window.OffscreenCanvas) {
-	// instanciating background worker from a function
-	worker = createWorker(theLastExperience);
-	// cloning OffscreenCanvas
-	const offscreen = canvas.transferControlToOffscreen();
-	// sending data to worker
-	worker.postMessage({ msg: "start", elem: offscreen }, [offscreen]);
-} else {
-	// falling back execution to the main thread
-	worker = theLastExperience(true);
-	worker.postMessage({ msg: "start", elem: canvas });
-}
-  </script>   
-  </body>  
-    
+				<div class="job">
+					<h3>Software Engineer</h3>
+					<div class="company">Course Coyote</div>
+					<div class="date">August 2023 - July 2024</div>
+					<ul>
+						<li>Wrote scripts which efficiently scraped website URLs and HTML files using Python, Beautiful Soup, and Scraping Bee</li>
+						<li>Analyzed data and iterated code until 98% of needed data was being pulled from over 1000 educational sites</li>
+						<li>Increased scraping efficiency by 45% through implementing the OpenAI API in the codebase</li>
+					</ul>
+				</div>
+
+				<div class="job">
+					<h3>Software Engineer Internship</h3>
+					<div class="company">Madison Square Garden Entertainment Corp.</div>
+					<div class="date">May 2023 - August 2023</div>
+					<ul>
+						<li>Created & documented client-side C++ APIs connecting the Unreal Engine to a custom multiplayer game server</li>
+						<li>Enabled multi-user, networked, and persistent virtual environments while emphasizing database design and network protocols</li>
+						<li>Managed the client/server networking layer and protocols while collaborating with the Interactive Lead</li>
+					</ul>
+				</div>
+			</section>
+
+			<section class="section">
+				<h2>Education</h2>
+				<div class="job">
+					<h3>Bachelor of Science in Software Engineering</h3>
+					<div class="company">University of California, Irvine</div>
+					<div class="date">September 2021 - June 2024</div>
+					<p>Donald Bren School of Information and Computer Sciences</p>
+				</div>
+				<div class="job">
+					<h3>Android Development Certificate</h3>
+					<div class="company">CodePath</div>
+					<div class="date">December 2021 - March 2022</div>
+					<p>Kotlin Programming</p>
+				</div>
+			</section>
+
+			<section class="section">
+				<h2>Technical Skills</h2>
+				<div class="skills-grid">
+					<div class="skill-category">
+						<h4>Languages</h4>
+						<p>Python, C++, Java, JavaScript, TypeScript, C#, R, Kotlin, MySQL, Rust, PHP</p>
+					</div>
+					<div class="skill-category">
+						<h4>Frontend</h4>
+						<p>React, TypeScript, HTML5, CSS3, JavaScript</p>
+					</div>
+					<div class="skill-category">
+						<h4>Backend</h4>
+						<p>Java Spring Boot, Node.js, REST APIs, Microservices</p>
+					</div>
+					<div class="skill-category">
+						<h4>Tools & Platforms</h4>
+						<p>Git, AWS, Android Studio, Unity, Unreal Engine, Jira, Maven, Jest Testing</p>
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<nav class="navigation">
+			<div class="nav-links">
+				<a href="dancing.html" class="nav-link">🤖 Interactive Dancing Robots</a>
+				<a href="Socials.html" class="nav-link">📱 Social Media</a>
+				<a href="katy.html" class="nav-link">🎵 Katy Perry</a>
+				<a href="https://play.google.com/store/apps/details?id=com.JosephSaadaFoundation.JosephSaadaFoundation" class="nav-link" target="_blank">📱 My App</a>
+			</div>
+		</nav>
+	</div>
+</body>
 </html>
