@@ -165,7 +165,23 @@
 			position: absolute;
 			left: 0;
 			font-weight: bold;
+		} 
+
+		.projects .company a {
+		  color: #cccccc;
+		  text-decoration: none;
+		  font-weight: 400;
+		  transition: color 0.3s ease;
 		}
+		
+		.projects .company a:hover {
+		  color: #ffffff;
+		}
+
+		.projects {
+		  grid-column: 1 / -1;
+		}
+
 		
 		.skills-grid {
 			display: grid;
@@ -322,19 +338,37 @@
 			</section>
 
 			<section class="section projects">
-  <h2>Projects</h2>
-  <div class="job">
-    <h3>ContextSyncAI</h3>
-    <div class="company"><a href="https://contextsyncai.com" target="_blank">contextsyncai.com</a></div>
-    <div class="date">2025</div>
-    <ul>
-      <li>Developed an AI-powered platform designed to synchronize contextual information across workflows, enhancing productivity and collaboration</li>
-      <li>Implemented scalable backend services with Node.js and integrated modern frontend features using React</li>
-      <li>Leveraged OpenAI APIs to deliver intelligent context management and real-time insights</li>
-      <li>Designed and deployed the project independently, showcasing full-stack expertise and product ownership</li>
-    </ul>
-  </div>
-</section>
+			  <h2>Projects</h2>
+			  
+			  <div class="job">
+			    <h3>ContextSyncAI</h3>
+			    <div class="company">
+			      <a href="https://contextsyncai.com" target="_blank">contextsyncai.com</a>
+			    </div>
+			    <div class="date">2025</div>
+			    <ul>
+			      <li>Developed an AI-powered platform designed to synchronize contextual information across workflows, enhancing productivity and collaboration</li>
+			      <li>Implemented scalable backend services with Node.js and integrated modern frontend features using React</li>
+			      <li>Leveraged OpenAI APIs to deliver intelligent context management and real-time insights</li>
+			      <li>Designed and deployed the project independently, showcasing full-stack expertise and product ownership</li>
+			    </ul>
+			  </div>
+			
+			  <div class="job">
+			    <h3>Leaf Buster AI</h3>
+			    <div class="company">
+			      <a href="https://devpost.com/software/leaf-buster-ai" target="_blank">devpost.com/software/leaf-buster-ai</a>
+			    </div>
+			    <div class="date">2023</div>
+			    <ul>
+			      <li>Built an AI model to differentiate between apple leaf diseases (rot vs. blotch) using image recognition</li>
+			      <li>Trained the model on Kaggle datasets with PyTorch and YOLO, achieving accurate classification of healthy vs. diseased leaves</li>
+			      <li>Designed a minimalist React.js frontend and integrated Figma for UI/UX prototyping</li>
+			      <li>Collaborated in a hackathon team, winning the Moonshot Prize at HackMerced VIII</li>
+			    </ul>
+			  </div>
+			</section>
+
 
 			
 			<section class="section">
